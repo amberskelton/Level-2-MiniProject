@@ -65,4 +65,69 @@ def dogPicked():
         print('---------------------------------------')
             
 def catPicked():
-    e
+    score=0
+    while True:
+        print('Would you prefer a more mellow or active cat?')
+        print()
+        print('Mellow cats tend to sleep more and relax quite often, and are better suited for a quieter environment.')
+        print('This type of cat may not be suitable for you if you want to play often or have a loud environment/children.')
+        print()
+        print('More active cats tend to be more playful and curious, and need more stimulation.')
+        print('This type of cat may not be suitable for you if you dislike disruptions like running around and knocking things over, especially at night.')
+        print('\nOptions:')
+        print('1. Mellow\n2. Active\n')
+        answer = input('Enter your answer: ')
+        if answer=='1':
+            score+=1
+            break
+        elif answer=='2':
+            score+=2
+            break
+        else:
+            print('---------------------------------------')
+            print('Please enter an option, either "1" or "2".')
+        print('---------------------------------------')
+    while True:
+        print('---------------------------------------')
+        print('Would you prefer a vocal or less vocal cat?')
+        print()
+        print('Vocal cats are more expressive, making it easier to understand them.')
+        print('However, they can be noisy, especially at night, and can be quite demanding.')
+        print()
+        print('Less vocal cats are quieter and less expressive.')
+        print('However, they may be harder to understand.')
+        print('\nOptions:')
+        print('1. Vocal\n2. Less Vocal\n')
+        answer = input('Enter your answer: ')
+        if answer=='1':
+            score+=4
+            break
+        elif answer=='2':
+            score+=8
+            break
+        else:
+            print('---------------------------------------')
+            print('Please enter an option, either "1" or "2".')
+        print('---------------------------------------')
+    while True:
+        print('---------------------------------------')
+        print('Would you prefer a cat with lower maintenance short hair or higher maintenance long hair?')
+        print()
+        print('Shorter-haired cats tend to be sleek.')
+        print('When shorter-haired cats shed, more fur may fall out rather than sticking to the coat, ending up around your home, but they usually require less brushing.')
+        print()
+        print('Longer-haired cats tend to be more fluffy.')
+        print('When longer-haired cats shed, more fur sticks to its coat than falling off, causing matting if not regularly brushed. Long hair that does fall out can also be more noticeable.')
+        print('\nOptions:')
+        print('1. Lower maintenance, little brushing\n2. Higher maintenance, more brushing\n')
+        answer = input('Enter your answer: ')
+        if answer=='1':
+            score+=16
+            break
+        elif answer=='2':
+            score+=32
+            break
+        else:
+            print('---------------------------------------')
+            print('Please enter an option, either "1" or "2".')
+        print('---------------------------------------')
