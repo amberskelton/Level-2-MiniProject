@@ -1,6 +1,6 @@
 # the following program is a simple multichoice quiz to help you decide which breed of cat/dog to get
 
-import Functions1
+import v1Functions
 import sys
 print('Instructions')
 
@@ -10,13 +10,13 @@ while True:
     print('\nOptions:')
     print('1. Cat\n2. Dog')
     answer=input('Enter your answer: ')
-    if answer=='Cat'.lower():
+    if answer=='1':
         print('---------------------------------------')
-        Functions1.catPicked()
+        v1Functions.catPicked()
         break
-    elif answer=='Dog'.lower():
+    elif answer=='2':
         print('---------------------------------------')
-        Functions1.dogPicked()
+        v1Functions.dogPicked()
         break
     else:
         print('---------------------------------------')
