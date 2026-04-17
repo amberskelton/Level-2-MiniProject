@@ -2,7 +2,11 @@
 
 import v1Functions
 import sys
-print('Instructions')
+print('About this quiz:')
+print('The following program is a simple multi-choice quiz to help owners that have difficulty deciding which breed of cat/dog to get!')
+print('This quiz will find a breed that is suitable to your physical and behavioural preferences.')
+print('Please note that the questions asked are based on generalised breed traits and that individual pets may differ!')
+print('Also, please remember to research more about your suggested breed to ensure you are confident and know the correct requirements to meet its needs.')
 
 while True:
     print('---------------------------------------')
@@ -15,7 +19,6 @@ while True:
         score=v1Functions.catPicked()
         breed=v1Functions.catBreed(score)
         result=v1Functions.descCat(breed)
-        print('---------------------------------------')
         print(result)
         break
     elif answer=='2':
@@ -23,7 +26,6 @@ while True:
         score=v1Functions.dogPicked()
         breed=v1Functions.dogBreed(score)
         result=v1Functions.descDog(breed)
-        print('---------------------------------------')
         print(result)
         break
     else:

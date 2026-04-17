@@ -17,16 +17,17 @@ def dogPicked():
         answer = input('Enter your answer: ')
         if answer=='1':
             score+=1
+            print('---------------------------------------')
             break
         elif answer=='2':
             score+=2
+            print('---------------------------------------')
             break
         else:
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
     while True:
-        print('---------------------------------------')
         print('Would you prefer a smaller or larger dog?')
         print()
         print('Smaller dogs are good for smaller living spaces and tend to live longer.')
@@ -39,25 +40,28 @@ def dogPicked():
         answer = input('Enter your answer: ')
         if answer=='1':
             score+=4
+            print('---------------------------------------')
             break
         elif answer=='2':
             score+=8
+            print('---------------------------------------')
             break
         else:
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
     while True:
-        print('---------------------------------------')
         print('Would you prefer a dog that sheds more but needs less grooming or a dog that sheds less but needs regular grooming?')
         print('\nOptions:')
         print('1. Sheds more, less grooming\n2. Sheds less, more grooming\n')
         answer = input('Enter your answer: ')
         if answer=='1':
             score+=16
+            print('---------------------------------------')
             break
         elif answer=='2':
             score+=32
+            print('---------------------------------------')
             break
         else:
             print('---------------------------------------')
@@ -80,16 +84,17 @@ def catPicked():
         answer = input('Enter your answer: ')
         if answer=='1':
             score+=1
+            print('---------------------------------------')
             break
         elif answer=='2':
             score+=2
+            print('---------------------------------------')
             break
         else:
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
     while True:
-        print('---------------------------------------')
         print('Would you prefer a vocal or less vocal cat?')
         print()
         print('Vocal cats are more expressive, making it easier to understand them.')
@@ -102,16 +107,17 @@ def catPicked():
         answer = input('Enter your answer: ')
         if answer=='1':
             score+=4
+            print('---------------------------------------')
             break
         elif answer=='2':
             score+=8
+            print('---------------------------------------')
             break
         else:
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
     while True:
-        print('---------------------------------------')
         print('Would you prefer a cat with lower maintenance short hair or higher maintenance long hair?')
         print()
         print('Shorter-haired cats tend to be sleek.')
@@ -124,9 +130,11 @@ def catPicked():
         answer = input('Enter your answer: ')
         if answer=='1':
             score+=16
+            print('---------------------------------------')
             break
         elif answer=='2':
             score+=32
+            print('---------------------------------------')
             break
         else:
             print('---------------------------------------')
