@@ -136,7 +136,7 @@ def catPicked():
 
 def catBreed(score):
     if score==21:
-        return 'British Short Hair'
+        return 'British Shorthair'
     elif score==37:
         return 'Ragdoll'
     elif score==25:
@@ -148,6 +148,60 @@ def catBreed(score):
     elif score==38:
         return 'Balinese'
     elif score==26:
-        return 'Bengal'
+        return 'Abyssinian'
     elif score==42:
         return 'Norwegian Forest Cat'
+
+def descCat(breed):
+    if breed=='British Shorthair':
+        return 'A suitable breed for you would be a British Shorthair cat.\nThey tend to be calm and relaxed, not overly vocal but are communicative, and need to be brushed at least once or twice a week.'
+    elif breed=='Ragdoll':
+        return 'A suitable breed for you would be a Ragdoll cat.\nThey tend to be very laid-back, quite sociable, and have a long, soft coat which needs to be brushed every other day.'
+    elif breed=='Russian Blue':
+        return 'A suitable breed for you would be a Russian Blue cat.\nThey tend to be very reserved and gentle, and need to be brushed at least once or twice a week.'
+    elif breed=='Persian':
+        return 'A suitable breed for you would be a Persian cat.\nThey tend to be very calm and quiet, and require daily brushing.'
+    elif breed=='Siamese':
+        return 'A suitable breed for you would be a Siamese cat.\nThey tend to be highly active, very vocal, and need to be brushed at least once or twice a week.'
+    elif breed=='Balinese':
+        return 'A suitable breed for you would be a Balinese cat.\nThey tend to be highly active, very vocal, and need to be brushed at least once or twice a week.'
+    elif breed=='Abyssinian':
+        return 'A suitable breed for you would be an Abyssinian cat.\nThey tend to be very energetic, can be vocal but are more soft-spoken, and need to be brushed at least once or twice a week.'
+    elif breed=='Norwegian Forest Cat':
+        return 'A suitable breed for you would be a Norwegian Forest Cat.\nThey tend to be very active and enjoy high climbing spaces, not overly vocal and are soft-spoken, and have a long, dense coat which needs to be brushed every other day.'
+
+def dogBreed(score):
+    if score==21:
+        return 'Pug'
+    elif score==37:
+        return 'Maltese'
+    elif score==25:
+        return 'Golden Retriever'
+    elif score==41:
+        return 'Labradoodle'
+    elif score==22:
+        return 'Chihuahua'
+    elif score==38:
+        return 'Miniature Schnauzer'
+    elif score==26:
+        return 'Siberian Husky'
+    elif score==42:
+        return 'Standard Poodle'
+
+def descDog(breed):
+    if breed=='Pug':
+        return 'A suitable dog breed for you would be a pug.\nThey tend to be very friendly, small, and need to be brushed 2-3 times a week.'
+    elif breed=='Maltese':
+        return 'A suitable dog breed for you would be a maltese.\nThey tend to be very friendly, small, and need to be brushed 3-4 times a week.'
+    elif breed=='Golden Retriever':
+        return 'A suitable dog breed for you would be a golden retriever.\nThey tend to be very friendly, medium to large in size, and need to be brushed 2-3 times a week.'
+    elif breed=='Labradoodle':
+        return 'A suitable dog breed for you would be a labradoodle.\nThey tend to be very friendly, generally medium in size but can be smaller, and need to be brushed 2-3 times a week.'
+    elif breed=='Chihuahua':
+        return 'A suitable dog breed for you would be a Chihuahua.\nThey tend to be deeply loyal to their owner and may be defensive against strangers, small, and need to be brushed at least once or twice a week.'
+    elif breed=='Miniature Schnauzer':
+        return 'A suitable dog breed for you would be a Miniature Schnauzer.\nThey tend to be friendly but more alert and stubborn, small, and need to be brushed daily or at least twice a week.'
+    elif breed=='Siberian Husky':
+        return 'A suitable dog breed for you would be a Siberian Husky.\nThey tend to be friendly but independent, medium in size, and need to be brushed once or twice a week but daily during shedding season.'
+    elif breed=='Standard Poodle':
+        return 'A suitable dog breed for you would be a Standard Poodle.\nThey tend to be quite independent, intelligent, and can be aloof with strangers, medium to large in size, and need to be brushed daily.'
