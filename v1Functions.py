@@ -63,6 +63,7 @@ def dogPicked():
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
+    return score
             
 def catPicked():
     score=0
@@ -94,8 +95,8 @@ def catPicked():
         print('Vocal cats are more expressive, making it easier to understand them.')
         print('However, they can be noisy, especially at night, and can be quite demanding.')
         print()
-        print('Less vocal cats are quieter and less expressive.')
-        print('However, they may be harder to understand.')
+        print('Less vocal cats are quieter and less communicative.')
+        print('They may be harder to understand.')
         print('\nOptions:')
         print('1. Vocal\n2. Less Vocal\n')
         answer = input('Enter your answer: ')
@@ -131,3 +132,22 @@ def catPicked():
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
+    return score
+
+def catBreed(score):
+    if score==21:
+        return 'British Short Hair'
+    elif score==37:
+        return 'Ragdoll'
+    elif score==25:
+        return 'Russian Blue'
+    elif score==41:
+        return 'Persian'
+    elif score==22:
+        return 'Siamese'
+    elif score==38:
+        return 'Balinese'
+    elif score==26:
+        return 'Bengal'
+    elif score==42:
+        return 'Norwegian Forest Cat'
