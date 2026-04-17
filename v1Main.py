@@ -12,12 +12,20 @@ while True:
     answer=input('Enter your answer: ')
     if answer=='1':
         print('---------------------------------------')
-        v1Functions.catPicked()
+        score=v1Functions.catPicked()
+        breed=v1Functions.catBreed(score)
+        result=v1Functions.descCat(breed)
+        print('---------------------------------------')
+        print(result)
         break
     elif answer=='2':
         print('---------------------------------------')
-        v1Functions.dogPicked()
+        score=v1Functions.dogPicked()
+        breed=v1Functions.dogBreed(score)
+        result=v1Functions.descDog(breed)
+        print('---------------------------------------')
+        print(result)
         break
     else:
         print('---------------------------------------')
-        print('Please enter "dog" or "cat".')
+        print('Please enter an option, "1" or "2".')
