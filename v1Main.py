@@ -8,7 +8,7 @@ while True:
     print('---------------------------------------')
     print('Do you want a cat or a dog?')
     print('\nOptions:')
-    print('1. Cat\n2. Dog\n3.No')
+    print('1. Cat\n2. Dog')
     answer=input('Enter your answer: ')
     if answer=='Cat'.lower():
         print('---------------------------------------')
@@ -18,10 +18,6 @@ while True:
         print('---------------------------------------')
         Functions1.dogPicked()
         break
-    elif answer=='No'.lower():
-        print('---------------------------------------')
-        print('ok bye')
-        sys.exit()
     else:
         print('---------------------------------------')
         print('Please enter "dog" or "cat".')
