@@ -49,3 +49,72 @@ dogDesc = {
     'Siberian Husky':'A suitable dog breed for you would be a Siberian Husky.\nThey tend to be friendly but independent, medium in size, and need to be brushed once or twice a week but daily during shedding season.',
     'Standard Poodle':'A suitable dog breed for you would be a Standard Poodle.\nThey tend to be quite independent, intelligent, and can be aloof with strangers, medium to large in size, and need to be brushed daily.'
 }
+
+def askQuestion(question,opt1,opt2,score1,score2):
+    while True:
+        print(question)
+        print('\nOptions:')
+        print(f'1. {opt1}')
+        print(f'2. {opt2}')
+        answer=input('Enter your answer: ')
+        if answer=='1':
+            print('---------------------------------------')
+            return score1
+        elif answer=='2':
+            print('---------------------------------------')
+            return score2
+        else:
+            print('---------------------------------------')
+            print('Please enter an option, either "1" or "2".')
+
+def dogPicked():
+    score=0
+    score+=askQuestion(
+        'Would you prefer a friendly or more independent dog?\n\n'
+        'Friendly dogs may be very affectionate and require significant attention.\n'
+        'This type of dog may not be suitable for you if you work long hours and do not have enough time to pay a lot of attention to it.\n'
+        'Independent dogs may be more comfortable on their own and may be stubborn and less affectionate.\n'
+        'This type of dog may not be suitable for you if you want to cuddle or train it.',
+        'Friendly', 'Independent',1,2
+    )
+    score+=askQuestion(
+        'Would you prefer a smaller or larger dog?\n\n'
+        'Smaller dogs are good for smaller living spaces and tend to live longer.\n'
+        'However, they tend to be more energetic and noisy and more likely to get injured.\n'
+        'Larger dogs are good for protection and better for being active.\n'
+        'However, they take up more space and cost more to own.',
+        'Smaller', 'Larger',4,8
+    )
+    score+=askQuestion(
+        'Would you prefer a dog that sheds more but needs less grooming or a dog that sheds less but needs regular grooming?\n\n',
+        'More shedding, less grooming', 'Less shedding, more grooming',16,32
+    )
+    return score
+
+def catPicked():
+    score=0
+    score+=askQuestion(
+        'Would you prefer a more mellow or active cat?\n\n'
+        'Mellow cats tend to sleep more and relax quite often, and are better suited for a quieter environment.\n'
+        'This type of cat may not be suitable for you if you want to play often or have a loud environment/children.\n'
+        'More active cats tend to be more playful and curious, and need more stimulation.\n'
+        'This type of cat may not be suitable for you if you dislike disruptions like running around and knocking things over, especially at night.',
+        'Mellow', 'Active',1,2
+    )
+    score+=askQuestion(
+        'Would you prefer a vocal or less vocal cat?\n\n'
+        'Vocal cats are more expressive, making it easier to understand them.\n'
+        'However, they can be noisy, especially at night, and can be quite demanding.\n'
+        'Less vocal cats are quieter and less communicative.\n'
+        'They may be harder to understand.',
+        'Vocal', 'Less Vocal',4,8
+    )
+    score+=askQuestion(
+        'Would you prefer a cat with lower maintenance short hair or higher maintenance long hair?\n\n'
+        'Shorter-haired cats tend to be sleek.\n'
+        'When shorter-haired cats shed, more fur may fall out rather than sticking to the coat, ending up around your home, but they usually require less brushing.\n'
+        'Longer-haired cats tend to be more fluffy.\n'
+        'When longer-haired cats shed, more fur sticks to its coat than falling off, causing matting if not regularly brushed. Long hair that does fall out can also be more noticeable.',
+        'Lower maintenance, little brushing', 'Higher maintenance, more brushing',16,32
+    )
+    return score
