@@ -50,7 +50,7 @@ dogDesc = {
     'Standard Poodle':'A suitable dog breed for you would be a Standard Poodle.\nThey tend to be quite independent, intelligent, and can be aloof with strangers, medium to large in size, and need to be brushed daily.'
 }
 
-def askQuestion(question,opt1,opt2,score1,score2):
+def askQuestion(question,opt1,opt2,score1,score2):#asks a multiple-choice question and returns the score value based on user input and ensures only valid options are accepted
     while True:
         print(question)
         print('\nOptions:')
@@ -68,7 +68,7 @@ def askQuestion(question,opt1,opt2,score1,score2):
             print('Please enter an option, either "1" or "2".')
             print('---------------------------------------')
 
-def dogPicked():
+def dogPicked():#asks all dog questions and calculates total score based on answers
     score=0
     score+=askQuestion(
         'Would you prefer a friendly or more independent dog?\n\n'
@@ -92,7 +92,7 @@ def dogPicked():
     )
     return score
 
-def catPicked():
+def catPicked():#asks all cat questions and calculates total score based on answers
     score=0
     score+=askQuestion(
         'Would you prefer a more mellow or active cat?\n\n'
@@ -120,14 +120,14 @@ def catPicked():
     )
     return score
 
-def catBreed(score):
+def catBreed(score):#returns the cat breed that matches the user's score
     return catBreeds.get(score)
 
-def descCat(breed):
+def descCat(breed):#returns the description for the selected cat breed
     return catDesc.get(breed)
 
-def dogBreed(score):
+def dogBreed(score):#returns the dog breed that matches the user's score
     return dogBreeds.get(score)
 
-def descDog(breed):
+def descDog(breed):#returns the description for the selected dog breed
     return dogDesc.get(breed)
