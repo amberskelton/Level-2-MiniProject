@@ -29,7 +29,7 @@ catDesc = {
 #dictionary containing possible sums(user score) and associated dog breeds
 dogBreeds = {
     21:'Pug',
-    37:'Maltese'
+    37:'Maltese',
     25:'Golden Retriever',
     41:'Labradoodle',
     22:'Chihuahua',
@@ -66,6 +66,7 @@ def askQuestion(question,opt1,opt2,score1,score2):
         else:
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
+            print('---------------------------------------')
 
 def dogPicked():
     score=0
@@ -118,3 +119,15 @@ def catPicked():
         'Lower maintenance, little brushing', 'Higher maintenance, more brushing',16,32
     )
     return score
+
+def catBreed(score):
+    return catBreeds.get(score)
+
+def descCat(breed):
+    return catDesc.get(breed)
+
+def dogBreed(score):
+    return dogBreeds.get(score)
+
+def descDog(breed):
+    return dogDesc.get(breed)
