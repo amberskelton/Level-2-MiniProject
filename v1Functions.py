@@ -1,10 +1,9 @@
 # contains functions for the quiz
 # function contains questions that each have different values assigned to them that add to score and the sum of these values are all different and correspond to different breeds
 
-import sys
-def dogPicked():
+def dogPicked():#function containing three questions on dogs
     score=0
-    while True:
+    while True:#loop that continues until condition is met to catch errors and invalid input
         print('Would you prefer a friendly or more independent dog?')
         print()
         print('Friendly dogs may be very affectionate and require significant attention.')
@@ -14,16 +13,16 @@ def dogPicked():
         print('This type of dog may not be suitable for you if you want to cuddle or train it.')
         print('\nOptions:')
         print('1. Friendly\n2. Independent\n')
-        answer = input('Enter your answer: ')
+        answer = input('Enter your answer: ')#takes and stores user input
         if answer=='1':
-            score+=1
+            score+=1#adds to score
             print('---------------------------------------')
             break
         elif answer=='2':
             score+=2
             print('---------------------------------------')
             break
-        else:
+        else:#handles invalid input from user
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
@@ -67,7 +66,7 @@ def dogPicked():
             print('---------------------------------------')
             print('Please enter an option, either "1" or "2".')
         print('---------------------------------------')
-    return score
+    return score#sends result
             
 def catPicked():
     score=0
@@ -142,8 +141,8 @@ def catPicked():
         print('---------------------------------------')
     return score
 
-def catBreed(score):
-    if score==21:
+def catBreed(score):#function containing if statement that returns different breeds of cats based on different possible sums(user score)
+    if score==21:#e.g. if user score is equal to this possibility, assign 'British Shorthair'
         return 'British Shorthair'
     elif score==37:
         return 'Ragdoll'
@@ -160,7 +159,7 @@ def catBreed(score):
     elif score==42:
         return 'Norwegian Forest Cat'
 
-def descCat(breed):
+def descCat(breed):#functions containing if statement that returns descriptions of cat breeds based on user's suggested cat breed
     if breed=='British Shorthair':
         return 'A suitable breed for you would be a British Shorthair cat.\nThey tend to be calm and relaxed, not overly vocal but are communicative, and need to be brushed at least once or twice a week.'
     elif breed=='Ragdoll':
@@ -178,8 +177,8 @@ def descCat(breed):
     elif breed=='Norwegian Forest Cat':
         return 'A suitable breed for you would be a Norwegian Forest Cat.\nThey tend to be very active and enjoy high climbing spaces, not overly vocal and are soft-spoken, and have a long, dense coat which needs to be brushed every other day.'
 
-def dogBreed(score):
-    if score==21:
+def dogBreed(score):#function containing if statement that returns different breeds of dogs based on different possible sums(user score)
+    if score==21:#e.g. if user score is equal to this possibility, assign 'Pug'
         return 'Pug'
     elif score==37:
         return 'Maltese'
@@ -196,7 +195,7 @@ def dogBreed(score):
     elif score==42:
         return 'Standard Poodle'
 
-def descDog(breed):
+def descDog(breed):#functions containing if statement that returns descriptions of dog breeds based on user's suggested dog breed
     if breed=='Pug':
         return 'A suitable dog breed for you would be a pug.\nThey tend to be very friendly, small, and need to be brushed 2-3 times a week.'
     elif breed=='Maltese':
