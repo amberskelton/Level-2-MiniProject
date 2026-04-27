@@ -6,6 +6,7 @@
 catBreeds = {
     21:'British Shorthair',
     37:'Ragdoll',
+    
     25:'Russian Blue',
     41:'Persian',
     22:'Siamese',
@@ -23,7 +24,7 @@ catDesc = {
     'Siamese':'A suitable breed for you would be a Siamese cat.\nThey tend to be highly active, very vocal, and need to be brushed at least once or twice a week.',
     'Balinese':'A suitable breed for you would be a Balinese cat.\nThey tend to be highly active, very vocal, and need to be brushed at least once or twice a week.',
     'Abyssinian':'A suitable breed for you would be an Abyssinian cat.\nThey tend to be very energetic, can be vocal but are more soft-spoken, and need to be brushed at least once or twice a week.',
-    'Norwegian Forest Cat':'A suitable breed for you would be a Norwegian Forest Cat.\nThey tend to be very active and enjoy high climbing spaces, not overly vocal and are soft-spoken, and have a long, dense coat which needs to be brushed every other day.'
+    'Norwegian Forest Cat':'A suitable breed for you would be a Norwegian Forest Cat.\nThey tend to be very active and enjoy high climbing spaces, not overly vocal and are soft-spoken,\nand have a long, dense coat which needs to be brushed every other day.'
 }
 
 #dictionary containing possible sums(user score) and associated dog breeds
@@ -50,29 +51,29 @@ dogDesc = {
     'Standard Poodle':'A suitable dog breed for you would be a Standard Poodle.\nThey tend to be quite independent, intelligent, and can be aloof with strangers, medium to large in size, and need to be brushed daily.'
 }
 
-def dogPicked():#asks all dog questions and calculates total score based on answers
-    score=0
-    score+=askQuestion(
-        'Would you prefer a friendly or more independent dog?\n\n'
-        'Friendly dogs may be very affectionate and require significant attention.\n'
-        'This type of dog may not be suitable for you if you work long hours and do not have enough time to pay a lot of attention to it.\n'
-        'Independent dogs may be more comfortable on their own and may be stubborn and less affectionate.\n'
-        'This type of dog may not be suitable for you if you want to cuddle or train it.',
-        'Friendly', 'Independent',1,2
-    )
-    score+=askQuestion(
-        'Would you prefer a smaller or larger dog?\n\n'
-        'Smaller dogs are good for smaller living spaces and tend to live longer.\n'
-        'However, they tend to be more energetic and noisy and more likely to get injured.\n'
-        'Larger dogs are good for protection and better for being active.\n'
-        'However, they take up more space and cost more to own.',
-        'Smaller', 'Larger',4,8
-    )
-    score+=askQuestion(
-        'Would you prefer a dog that sheds more but needs less grooming or a dog that sheds less but needs regular grooming?\n\n',
-        'More shedding, less grooming', 'Less shedding, more grooming',16,32
-    )
-    return score
+#dictionary containing each cat breed and a photo of it
+catPhotos={
+    'British Shorthair':'britishshorthair.png',
+    'Ragdoll':'ragdoll.png',
+    'Russian Blue':'russianblue.png',
+    'Persian':'persian.png',
+    'Siamese':'siamese.png',
+    'Balinese':'balinese.png',
+    'Abyssinian':'abyssinian.png',
+    'Norwegian Forest Cat':'norwegianforest.png'
+}
+
+#dicitonary containing each dog breed and a photo of it
+dogPhotos={
+    'Pug':'pug.png',
+    'Maltese':'maltese.png',
+    'Golden Retriever':'goldenretriever.png',
+    'Labradoodle':'labradoodle.png',
+    'Chihuahua':'chihuahua.png',
+    'Miniature Schnauzer':'miniatureschnauzer.png',
+    'Siberian Husky':'siberianhusky.png',
+    'Standard Poodle':'standardpoodle.png'
+}
 
 def catResult(score):
     breed=catBreeds.get(score)
